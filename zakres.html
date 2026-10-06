@@ -1,0 +1,109 @@
+<!doctype html>
+<!--
+  SZKIC STRONY PUBLICZNEJ. NIE PUBLIKOWAĆ przed CLIENT READY (DEC-012).
+  Treść pochodzi z Canonu (docs/canon/) z korektami ownera (DECISION_LOG.md, DEC-026); mapowanie: site/README.md.
+  Kierunek wizualny: docs/design/EXPERIENCE_DIRECTION.md ("Horyzont").
+  Braki do uzupełnienia są oznaczone tekstem "DO UZUPEŁNIENIA" (klasa .todo).
+  Przed publikacją usuń meta robots (noindex, nofollow).
+-->
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0E1526">
+  <title>Zakres pomocy i jej granice - spokojna pomoc po rozstaniu i w rozwodzie</title>
+  <meta name="description" content="W czym pomagam, a w czym nie: porządkowanie działań i rozmów. Bez porady prawnej, terapii, mediacji i interwencji kryzysowej.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/alegreya-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/alegreya-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/sen-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/early.js"></script>
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body class="page-sub">
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+
+  <div class="topbar" data-topbar>
+    <header class="masthead">
+      <div class="wrap masthead__inner">
+      <p class="brand">Łukasz Kostrzewa</p>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-menu><span class="menu-btn__icon" aria-hidden="true"></span>Menu</button>
+      <nav id="site-nav" class="nav" aria-label="Nawigacja po stronie">
+        <ul role="list">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="formy-wspolpracy.html">Formy współpracy</a></li>
+          <li><a href="wolne-terminy.html">Wolne terminy</a></li>
+          <li><a href="zakres.html" aria-current="page">Zakres</a></li>
+          <li><a href="o-mnie.html">O mnie</a></li>
+          <li><a href="pytania.html">Pytania</a></li>
+          <li class="nav__cta"><a href="kontakt.html">Umów pierwszą rozmowę</a></li>
+        </ul>
+      </nav>
+      </div>
+    </header>
+    <div class="topbar__progress" aria-hidden="true"></div>
+  </div>
+
+  <main id="main">
+
+    <div class="subhead" data-tone="night" data-tone-end="0.8">
+      <div class="subhead__sky" aria-hidden="true"><span class="subhead__glow"></span></div>
+      <div class="wrap subhead__inner">
+        <h1 class="subhead__title">Zakres pomocy i jej granice</h1>
+        <p class="subhead__lead">Od początku mówię wprost, w czym mogę Ci pomóc, a w czym nie. Dzięki temu wiesz, na czym stoisz.</p>
+      </div>
+    </div>
+
+    <section class="sub" aria-label="Zakres i granice pomocy">
+      <div class="wrap">
+        <div class="scope">
+          <div class="scope__col scope__col--in">
+            <h2 class="scope__h2">W zakresie pomocy</h2>
+            <ul class="fit__list" role="list">
+              <li>uporządkowanie działań, terminów i priorytetów,</li>
+              <li>przygotowanie trudnych rozmów,</li>
+              <li>spokojna, rzeczowa komunikacja bez eskalacji,</li>
+              <li>sprawdzanie wykonania ustalonych działań,</li>
+              <li>przygotowanie pytań do prawnika lub innego specjalisty.</li>
+            </ul>
+          </div>
+          <div class="scope__col scope__col--out">
+            <h2 class="scope__h2">Poza zakresem pomocy</h2>
+            <ul class="fit__list" role="list">
+              <li>porada prawna, interpretacja przepisów i prognoza wyniku sprawy,</li>
+              <li>diagnoza, psychoterapia, leczenie i terapia par,</li>
+              <li>mediacja,</li>
+              <li>interwencja kryzysowa i wsparcie 24/7,</li>
+              <li>ocena dziecka lub zdolności opiekuńczych drugiego rodzica,</li>
+              <li>pomoc w manipulacji, odwecie, kontroli lub ukrywaniu majątku czy dziecka,</li>
+              <li>dzieci jako klienci - pomoc jest tylko dla dorosłych.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="statement">Moja praca nie zastępuje pomocy prawnej, psychologicznej, mediacji ani interwencji kryzysowej.</p>
+      </div>
+    </section>
+    <section class="closing" aria-labelledby="tytul-zamkniecie" data-where-label="Pierwszy krok">
+      <div class="closing__sky" aria-hidden="true"><span class="closing__sun"></span><span class="closing__line"></span></div>
+      <div class="wrap closing__inner">
+        <h2 id="tytul-zamkniecie" class="closing__title">Zacznij od jednego kroku</h2>
+        <p class="closing__lead">Wystarczy 15 minut rozmowy. Sprawdzimy w niej, czy i jak mogę Ci pomóc. Szczegółów swojej sprawy opisywać nie musisz.</p>
+        <p class="closing__action"><a class="button button--ink magnetic" href="kontakt.html">Umów pierwszą rozmowę</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" data-tone="night">
+    <div class="wrap footer__grid">
+      <p><strong>Dane przedsiębiorcy:</strong> Łukasz Kostrzewa, ul. Rynek 21A, 08-445 Osieck, NIP 5321815694, REGON 140424310</p>
+      <p>Moja praca nie zastępuje pomocy prawnej, psychologicznej, mediacji ani interwencji kryzysowej.</p>
+      <p><strong>Dokumenty:</strong> <a href="regulamin.html">Regulamin</a>, <a href="polityka-prywatnosci.html">Polityka prywatności i cookies</a>, <a href="regulamin.html#odstapienie">odstąpienie od umowy</a></p>
+      <p>Ta strona nie używa plików cookie ani skryptów śledzących.</p>
+    </div>
+  </footer>
+</body>
+</html>

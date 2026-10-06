@@ -1,0 +1,151 @@
+<!doctype html>
+<!--
+  SZKIC STRONY PUBLICZNEJ. NIE PUBLIKOWAĆ przed CLIENT READY (DEC-012).
+  Treść pochodzi z Canonu (docs/canon/) z korektami ownera (DECISION_LOG.md, DEC-026); mapowanie: site/README.md.
+  Kierunek wizualny: docs/design/EXPERIENCE_DIRECTION.md ("Horyzont").
+  Braki do uzupełnienia są oznaczone tekstem "DO UZUPEŁNIENIA" (klasa .todo).
+  Przed publikacją usuń meta robots (noindex, nofollow).
+-->
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; connect-src https://script.google.com https://script.googleusercontent.com">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0E1526">
+  <title>Zmiana terminu - spokojna pomoc po rozstaniu i w rozwodzie</title>
+  <meta name="description" content="Zmiana terminu pierwszej rozmowy z odnośnika z wiadomości e-mail.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/alegreya-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/alegreya-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/sen-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/booking.css">
+  <script src="assets/js/early.js"></script>
+  <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/booking.js" defer></script>
+</head>
+<body class="page-sub page-book">
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+
+  <div class="topbar is-day" data-topbar>
+    <header class="masthead">
+      <div class="wrap masthead__inner">
+      <p class="brand">Łukasz Kostrzewa</p>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-menu><span class="menu-btn__icon" aria-hidden="true"></span>Menu</button>
+      <nav id="site-nav" class="nav" aria-label="Nawigacja po stronie">
+        <ul role="list">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="formy-wspolpracy.html">Formy współpracy</a></li>
+          <li><a href="wolne-terminy.html">Wolne terminy</a></li>
+          <li><a href="zakres.html">Zakres</a></li>
+          <li><a href="o-mnie.html">O mnie</a></li>
+          <li><a href="pytania.html">Pytania</a></li>
+          <li class="nav__cta"><a href="kontakt.html">Umów pierwszą rozmowę</a></li>
+        </ul>
+      </nav>
+      </div>
+    </header>
+    <div class="topbar__progress" aria-hidden="true"></div>
+  </div>
+
+  <main id="main">
+
+    <div class="book" data-booking data-view="reschedule" data-state="loading" data-endpoint="" data-service-id="pierwsza-rozmowa" data-service-name="Pierwsza rozmowa" data-service-minutes="15">
+      <div class="wrap">
+        <header class="book__head">
+          <h1 class="book__title">Zmiana terminu</h1>
+          <p class="book__lead">Wybierz nowy dzień i godzinę.</p>
+        </header>
+        <div class="book__grid">
+          <aside class="book__side" aria-label="Obecny termin">
+            <div class="svc">
+              <h2 class="svc__name">Obecny termin</h2>
+              <p class="svc__dur" data-current>Sprawdzam...</p>
+              <p class="svc__more">Po zmianie dotychczasowy termin zostanie zwolniony, a nowe potwierdzenie dostaniesz e-mailem.</p>
+            </div>
+          </aside>
+          <div class="book__stage" data-stage>
+            <section class="panel" data-panel="loading" aria-label="Wczytywanie">
+              <p class="panel__loading">Sprawdzam wolne terminy...</p>
+              <div class="skel" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            </section>
+            <section class="panel" data-panel="invalid" hidden>
+              <div class="notice notice--warn" role="alert">
+                <h2 class="notice__title" data-invalid-title tabindex="-1">Ten link jest nieważny.</h2>
+                <p class="notice__text" data-invalid-text></p>
+                <p class="notice__actions"><a href="wolne-terminy.html">Wolne terminy</a> <a href="kontakt.html">Inny sposób kontaktu</a></p>
+              </div>
+            </section>
+
+            <section class="panel" data-panel="unavailable" hidden>
+              <div class="notice notice--warn" role="alert">
+                <h2 class="notice__title" data-unavail-title tabindex="-1">Rezerwacja online jest teraz niedostępna.</h2>
+                <p class="notice__text" data-unavail-text>Nie pokazuję terminów, których nie mogę potwierdzić. Spróbuj za chwilę albo skorzystaj z innego sposobu kontaktu.</p>
+                <p class="notice__actions"><button type="button" class="linkbtn" data-retry>Spróbuj ponownie</button> <a href="kontakt.html">Inny sposób kontaktu</a></p>
+              </div>
+            </section>
+            <section class="panel" data-panel="when" hidden>
+              <div class="when-top" data-when-top></div>
+              <div class="when">
+                <section class="cal" aria-labelledby="cal-title">
+                  <div class="cal__bar">
+                    <h2 class="cal__month" id="cal-title" data-month></h2>
+                    <div class="cal__nav">
+                      <button type="button" class="cal__btn" data-prev aria-label="Poprzedni miesiąc"><span class="chev chev--l" aria-hidden="true"></span></button>
+                      <button type="button" class="cal__btn" data-next aria-label="Następny miesiąc"><span class="chev chev--r" aria-hidden="true"></span></button>
+                    </div>
+                  </div>
+                  <table class="cal__grid" role="grid" aria-labelledby="cal-title">
+                    <thead><tr role="row"><th scope="col" abbr="poniedziałek">pn</th><th scope="col" abbr="wtorek">wt</th><th scope="col" abbr="środa">śr</th><th scope="col" abbr="czwartek">cz</th><th scope="col" abbr="piątek">pt</th><th scope="col" abbr="sobota">sb</th><th scope="col" abbr="niedziela">nd</th></tr></thead>
+                    <tbody data-grid></tbody>
+                  </table>
+                  <p class="cal__legend">Dni z wolnymi terminami są wyraźniejsze, pozostałe są nieaktywne.</p>
+                </section>
+
+                <section class="hours" aria-labelledby="hours-title">
+                  <h3 class="hours__title" id="hours-title" data-hours-title tabindex="-1">Wybierz dzień</h3>
+                  <p class="hours__hint" data-hours-hint>Po wybraniu dnia pokażę wolne godziny.</p>
+                  <div class="hours__list" role="radiogroup" aria-labelledby="hours-title" data-hours></div>
+                  <div data-when-notice></div>
+                  <div class="hours__action"><button type="button" class="button button--ink" data-continue disabled>Dalej: dane kontaktowe</button></div>
+                </section>
+              </div>
+            </section>
+
+            <section class="panel" data-panel="done" hidden>
+              <div class="done">
+                <h2 class="done__title" data-done-title tabindex="-1">Termin jest zarezerwowany.</h2>
+                <dl class="done__list">
+                  <div><dt>Rozmowa</dt><dd data-done-service></dd></div>
+                  <div><dt>Data</dt><dd data-done-date></dd></div>
+                  <div><dt>Godzina</dt><dd data-done-time></dd></div>
+                  <div><dt>Czas trwania</dt><dd data-done-dur></dd></div>
+                </dl>
+                <p class="done__mail" data-done-mail></p>
+                <p class="done__note">Link do zmiany lub anulowania terminu jest w wiadomości e-mail.</p>
+                <p class="done__actions"><a class="button button--ink" href="index.html">Wróć na stronę główną</a></p>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+      <p class="sr-only" role="status" aria-live="polite" data-live></p>
+      <noscript>
+        <div class="wrap"><div class="notice notice--warn"><p class="notice__title">Ta strona wymaga włączonego JavaScript.</p><p class="notice__text">Włącz JavaScript w przeglądarce albo skorzystaj z innego sposobu kontaktu: <a href="kontakt.html">strona kontaktu</a>.</p></div></div>
+      </noscript>
+    </div>
+  </main>
+
+  <footer class="footer" data-tone="night">
+    <div class="wrap footer__grid">
+      <p><strong>Dane przedsiębiorcy:</strong> Łukasz Kostrzewa, ul. Rynek 21A, 08-445 Osieck, NIP 5321815694, REGON 140424310</p>
+      <p>Moja praca nie zastępuje pomocy prawnej, psychologicznej, mediacji ani interwencji kryzysowej.</p>
+      <p><strong>Dokumenty:</strong> <a href="regulamin.html">Regulamin</a>, <a href="polityka-prywatnosci.html">Polityka prywatności i cookies</a>, <a href="regulamin.html#odstapienie">odstąpienie od umowy</a></p>
+      <p>Ta strona nie używa plików cookie ani skryptów śledzących.</p>
+    </div>
+  </footer>
+</body>
+</html>

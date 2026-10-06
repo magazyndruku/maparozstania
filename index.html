@@ -1,0 +1,386 @@
+<!doctype html>
+<!--
+  SZKIC STRONY PUBLICZNEJ. NIE PUBLIKOWAĆ przed CLIENT READY (DEC-012).
+  Treść pochodzi z Canonu (docs/canon/) z korektami ownera (DECISION_LOG.md, DEC-026); mapowanie: site/README.md.
+  Kierunek wizualny: docs/design/EXPERIENCE_DIRECTION.md ("Horyzont").
+  Braki do uzupełnienia są oznaczone tekstem "DO UZUPEŁNIENIA" (klasa .todo).
+  Przed publikacją usuń meta robots (noindex, nofollow).
+-->
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; media-src 'self'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0E1526">
+  <title>Rzeczowo po rozstaniu | Pomoc w decyzjach i działaniu</title>
+  <meta name="description" content="Spokojna, praktyczna pomoc dla dorosłych w separacji lub rozwodzie: porządkowanie spraw, przygotowanie trudnych rozmów, konkretne działania. Bez porady prawnej i terapii.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/alegreya-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/alegreya-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/sen-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/alegreya-400-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/early.js"></script>
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body class="page-home">
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+
+  <div class="topbar" data-topbar>
+    <header class="masthead">
+      <div class="wrap masthead__inner">
+      <p class="brand">Łukasz Kostrzewa</p>
+      <p class="where" aria-hidden="true" data-where></p>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-menu><span class="menu-btn__icon" aria-hidden="true"></span>Menu</button>
+      <nav id="site-nav" class="nav" aria-label="Nawigacja po stronie">
+        <ul role="list">
+          <li><a href="index.html" aria-current="page">Start</a></li>
+          <li><a href="formy-wspolpracy.html">Formy współpracy</a></li>
+          <li><a href="wolne-terminy.html">Wolne terminy</a></li>
+          <li><a href="zakres.html">Zakres</a></li>
+          <li><a href="o-mnie.html">O mnie</a></li>
+          <li><a href="pytania.html">Pytania</a></li>
+          <li class="nav__cta"><a href="kontakt.html">Umów pierwszą rozmowę</a></li>
+        </ul>
+      </nav>
+      </div>
+    </header>
+    <div class="topbar__progress" aria-hidden="true"></div>
+  </div>
+
+  <main id="main">
+
+    <div class="scene" data-hero-pin data-tone="night">
+      <section class="hero" aria-labelledby="tytul-hero" data-hero data-where-label="Start">
+        <div class="hero__sky" aria-hidden="true"><span class="hero__glow"></span></div>
+        <div class="wrap hero__inner">
+          <div class="hero__copy">
+            <p class="hero__descriptor">Spokojna, praktyczna pomoc, gdy rozstanie albo rozwód przewraca wszystko do góry nogami</p>
+            <h1 id="tytul-hero" class="hero__title">Nie wiesz, co zrobić teraz po rozstaniu?</h1>
+            <p class="hero__lead">Da się to poukładać. Nie wszystko naraz, tylko po kolei i w tempie, które da się udźwignąć. Pomagam Ci zobaczyć, co jest teraz naprawdę ważne, przygotować trudne rozmowy i zamienić bałagan w konkretny plan. Bez dokładania konfliktu.</p>
+            <p class="hero__action"><a class="button button--light magnetic" href="kontakt.html">Umów pierwszą rozmowę</a></p>
+            <p class="hero__fit">Zaczynamy od 15 minut rozmowy. Nie omawiamy w niej Twojej sprawy, tylko sprawdzamy, czy mogę Ci pomóc. Dla osób dorosłych (18+).</p>
+          </div>
+        </div>
+        <div class="plan" aria-hidden="true" data-chaos>
+          <div class="wrap plan__inner">
+            <span class="plan__line"></span>
+            <ul class="mist" role="list">
+            <li class="mist__w m1">od czego zacząć?</li>
+            <li class="mist__w m2">emocje</li>
+            <li class="mist__w m3">dzieci</li>
+            <li class="mist__w m4">terminy</li>
+            <li class="mist__w m5">mieszkanie</li>
+            <li class="mist__w m6">pieniądze</li>
+            <li class="mist__w m7">co powiedzieć?</li>
+            <li class="mist__w m8">prawnik</li>
+            </ul>
+            <p class="plan__cap">Jedno po drugim.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="dawn" aria-labelledby="tytul-dawn" data-dawn data-where-label="Następny krok">
+      <div class="dawn__night" data-tone="night">
+        <div class="wrap">
+          <h2 id="tytul-dawn" class="dawn__title" data-reveal>
+            <span class="dawn__line">Nie musisz dziś</span>
+            <span class="dawn__line">rozwiązać wszystkiego.</span>
+            <span class="dawn__line dawn__line--lit">Wystarczy następny</span>
+            <span class="dawn__line dawn__line--lit">dobry krok.</span>
+          </h2>
+        </div>
+      </div>
+      <div class="sunrise" aria-hidden="true" data-tone="night" data-tone-end="0.6">
+        <picture class="sunrise__photo">
+          <source media="(max-width: 47.99em)" type="image/avif" srcset="assets/img/sunrise-m.avif">
+          <source media="(max-width: 47.99em)" type="image/webp" srcset="assets/img/sunrise-m.webp">
+          <source type="image/avif" srcset="assets/img/sunrise.avif">
+          <source type="image/webp" srcset="assets/img/sunrise.webp">
+          <img src="assets/img/sunrise.webp" alt="" width="2560" height="1086" loading="lazy" decoding="async">
+        </picture>
+        <video class="sunrise__video" muted playsinline preload="none" disablepictureinpicture disableremoteplayback aria-hidden="true" width="1280" height="720" data-src="assets/video/sunrise-video.mp4" data-poster="assets/img/sunrise-video-poster.webp"></video>
+        <span class="sunrise__grain"></span>
+      </div>
+      <div class="dawn__day">
+        <div class="wrap">
+          <p class="dawn__lead">To ciężki czas. Łatwiej go przejść, kiedy widzisz, co nie może czekać, a co spokojnie poczeka. Pomagam Ci to rozdzielić i zamienić w kroki, które możesz zrobić od razu.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="dla-kogo" class="fit" aria-labelledby="tytul-dla-kogo" data-where-label="Dla kogo">
+      <div class="wrap">
+        <div class="fit__head">
+          <h2 id="tytul-dla-kogo" class="h2">Dla kogo jest ta pomoc</h2>
+          <p class="fit__lead">Rozstanie i rozwód rzucają na Ciebie mnóstwo decyzji naraz, zwykle wtedy, gdy emocji jest najwięcej, a terminy gonią. Nie musisz wszystkiego wiedzieć. Nie musisz też ogarniać wszystkiego jednocześnie. Najtrudniej bywa zamienić to, co już wiesz, w jedno spokojne działanie. Od tego zaczynamy.</p>
+        </div>
+        <div class="fit__cols">
+          <div class="fit__col fit__col--yes">
+            <h3 class="fit__h3">To może być dla Ciebie, jeśli:</h3>
+            <ul class="fit__list" role="list">
+              <li>masz minimum 18 lat i jesteś w separacji, w trakcie rozwodu albo tuż po ogłoszeniu rozstania,</li>
+              <li>chcesz wiedzieć, co zrobić najpierw, czego na razie lepiej nie robić i jak przygotować się do trudnej rozmowy,</li>
+              <li>zależy Ci na spokoju i rzeczowości, a nie na podkręcaniu konfliktu,</li>
+              <li>wiesz, że dostajesz pomoc w organizowaniu i wykonywaniu działań, a nie poradę prawną czy terapię.</li>
+            </ul>
+          </div>
+          <div class="fit__col fit__col--no">
+            <h3 class="fit__h3">To nie jest właściwa pomoc, jeśli:</h3>
+            <ul class="fit__list" role="list">
+              <li>szukasz przede wszystkim porady prawnej, terapii albo mediacji,</li>
+              <li>aktualnie doświadczasz przemocy, gróźb lub stalkingu albo myślisz o zrobieniu sobie krzywdy - potrzebujesz wtedy pomocy wyspecjalizowanej; w zagrożeniu życia lub zdrowia zadzwoń pod 112,</li>
+              <li>chcesz zaszkodzić drugiej osobie, ukryć majątek lub dziecko albo działać niezgodnie z prawem.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="w-czym-pomagam" class="choose" aria-labelledby="tytul-w-czym" data-where-label="W czym Ci pomagam">
+      <div class="wrap">
+        <div class="choose__head">
+          <h2 id="tytul-w-czym" class="h2">W czym Ci pomagam</h2>
+          <p class="choose__hint">Które z tych zdań brzmi dziś jak Ty?</p>
+        </div>
+        <ul class="choose__list" role="list" data-select data-light>
+          <li class="choose__rail" aria-hidden="true"><span class="choose__light"></span></li>
+          <li class="choose__item">
+            <h3 class="choose__q"><button type="button" class="choose__btn" id="pomoc-b1" aria-expanded="true" aria-controls="pomoc-1">Nie wiem, od czego zacząć.</button></h3>
+            <div class="choose__panel" id="pomoc-1" role="region" aria-labelledby="pomoc-b1">
+              <p class="choose__label">Czego potrzebujesz</p>
+              <p class="choose__need">Wyłowić z chaosu to, co naprawdę ważne.</p>
+              <p class="choose__label">Jak pomagam</p>
+              <p class="choose__how">Wybieramy razem trzy do pięciu działań na najbliższy czas. Każde ma termin i swoje miejsce w kolejności, więc nie musisz już żonglować wszystkim naraz.</p>
+              <p class="choose__label">Następny krok</p>
+              <p class="choose__next">Zaczynamy od 15-minutowej rozmowy. Sprawdzamy w niej, czy i jak mogę Ci pomóc. <a class="choose__link" href="kontakt.html">Umów pierwszą rozmowę</a></p>
+            </div>
+          </li>
+          <li class="choose__item">
+            <h3 class="choose__q"><button type="button" class="choose__btn" id="pomoc-b2" aria-expanded="true" aria-controls="pomoc-2">Boję się, że zrobię coś nie tak.</button></h3>
+            <div class="choose__panel" id="pomoc-2" role="region" aria-labelledby="pomoc-b2">
+              <p class="choose__label">Czego potrzebujesz</p>
+              <p class="choose__need">Wiedzieć, czego na razie lepiej nie robić.</p>
+              <p class="choose__label">Jak pomagam</p>
+              <p class="choose__how">Dostajesz krótką listę rzeczy, których lepiej na razie nie robić, żeby nie utrudnić sobie kolejnych kroków. Łatwiej ruszyć do przodu, gdy wiesz, czego nie ruszać.</p>
+              <p class="choose__label">Następny krok</p>
+              <p class="choose__next">Zaczynamy od 15-minutowej rozmowy. Sprawdzamy w niej, czy i jak mogę Ci pomóc. <a class="choose__link" href="kontakt.html">Umów pierwszą rozmowę</a></p>
+            </div>
+          </li>
+          <li class="choose__item">
+            <h3 class="choose__q"><button type="button" class="choose__btn" id="pomoc-b3" aria-expanded="true" aria-controls="pomoc-3">Czeka mnie trudna rozmowa.</button></h3>
+            <div class="choose__panel" id="pomoc-3" role="region" aria-labelledby="pomoc-b3">
+              <p class="choose__label">Czego potrzebujesz</p>
+              <p class="choose__need">Wejść w rozmowę z planem.</p>
+              <p class="choose__label">Jak pomagam</p>
+              <p class="choose__how">Ustalamy, czego naprawdę chcesz od tej rozmowy. Potem szukamy słów, które pozwolą Ci to powiedzieć spokojnie i rzeczowo.</p>
+              <p class="choose__label">Następny krok</p>
+              <p class="choose__next">Zaczynamy od 15-minutowej rozmowy. Sprawdzamy w niej, czy i jak mogę Ci pomóc. <a class="choose__link" href="kontakt.html">Umów pierwszą rozmowę</a></p>
+            </div>
+          </li>
+          <li class="choose__item">
+            <h3 class="choose__q"><button type="button" class="choose__btn" id="pomoc-b4" aria-expanded="true" aria-controls="pomoc-4">Nie potrafię napisać spokojnej wiadomości.</button></h3>
+            <div class="choose__panel" id="pomoc-4" role="region" aria-labelledby="pomoc-b4">
+              <p class="choose__label">Czego potrzebujesz</p>
+              <p class="choose__need">Spokojne słowa w trudnej wiadomości.</p>
+              <p class="choose__label">Jak pomagam</p>
+              <p class="choose__how">Razem układamy wiadomość albo rozmowę tak, żeby powiedzieć, co trzeba, i nie dolać oliwy do ognia.</p>
+              <p class="choose__label">Następny krok</p>
+              <p class="choose__next">Zaczynamy od 15-minutowej rozmowy. Sprawdzamy w niej, czy i jak mogę Ci pomóc. <a class="choose__link" href="kontakt.html">Umów pierwszą rozmowę</a></p>
+            </div>
+          </li>
+          <li class="choose__item">
+            <h3 class="choose__q"><button type="button" class="choose__btn" id="pomoc-b5" aria-expanded="true" aria-controls="pomoc-5">Potrzebuję przygotować pytania do specjalisty.</button></h3>
+            <div class="choose__panel" id="pomoc-5" role="region" aria-labelledby="pomoc-b5">
+              <p class="choose__label">Czego potrzebujesz</p>
+              <p class="choose__need">Wizyta u specjalisty, po której wiesz więcej.</p>
+              <p class="choose__label">Jak pomagam</p>
+              <p class="choose__how">Zbieramy Twoje pytania do prawnika lub innego specjalisty i układamy je w kolejności. Na spotkanie przychodzisz z listą, a nie z mętlikiem w głowie.</p>
+              <p class="choose__label">Następny krok</p>
+              <p class="choose__next">Zaczynamy od 15-minutowej rozmowy. Sprawdzamy w niej, czy i jak mogę Ci pomóc. <a class="choose__link" href="kontakt.html">Umów pierwszą rozmowę</a></p>
+            </div>
+          </li>
+          <li class="choose__item">
+            <h3 class="choose__q"><button type="button" class="choose__btn" id="pomoc-b6" aria-expanded="true" aria-controls="pomoc-6">Trudno mi wytrwać w ustaleniach.</button></h3>
+            <div class="choose__panel" id="pomoc-6" role="region" aria-labelledby="pomoc-b6">
+              <p class="choose__label">Czego potrzebujesz</p>
+              <p class="choose__need">Utrzymać kierunek, nawet gdy sił brakuje.</p>
+              <p class="choose__label">Jak pomagam</p>
+              <p class="choose__how">Wracamy do ustaleń, sprawdzamy, co się udało, i wyznaczamy kolejny krok. Każdy zrobiony krok się liczy, nawet ten mały.</p>
+              <p class="choose__label">Następny krok</p>
+              <p class="choose__next">Zaczynamy od 15-minutowej rozmowy. Sprawdzamy w niej, czy i jak mogę Ci pomóc. <a class="choose__link" href="kontakt.html">Umów pierwszą rozmowę</a></p>
+            </div>
+          </li>
+        </ul>
+        <p class="choose__caveat">Zobowiązuję się do starannego działania, nie do rezultatu. Nie obiecuję wyniku sprawy, pojednania ani spokoju w określonym czasie.</p>
+      </div>
+    </section>
+
+    <section id="jak-to-wyglada" class="path" aria-labelledby="tytul-jak" data-where-label="Jak to wygląda">
+      <div class="wrap">
+        <div class="path__head">
+          <h2 id="tytul-jak" class="h2">Jak to wygląda</h2>
+          <p class="path__lead">Cztery kroki: od pierwszej rozmowy do konkretnych działań.</p>
+        </div>
+        <div class="path__track" data-path>
+          <div class="path__rail" aria-hidden="true"><span class="path__fill"></span><span class="path__light"></span></div>
+          <ol class="path__steps" role="list">
+            <li class="path__step">
+              <span class="path__dot" aria-hidden="true"></span>
+              <h3 class="path__title"><span class="path__n" aria-hidden="true">1</span> Pierwsza rozmowa (15 minut)</h3>
+              <p>Piętnaście minut na sprawdzenie, czy i jak mogę Ci pomóc. Twojej sprawy jeszcze nie omawiamy i nie udzielam porad. To dopiero start.</p>
+            </li>
+            <li class="path__step">
+              <span class="path__dot" aria-hidden="true"></span>
+              <h3 class="path__title"><span class="path__n" aria-hidden="true">2</span> Decyzja o dopasowaniu</h3>
+              <p>Decyzję podejmuje człowiek. Jeśli moja pomoc nie będzie dla Ciebie właściwa albo potrzebna Ci będzie inna, powiem to wprost i podpowiem, gdzie jej szukać.</p>
+            </li>
+            <li class="path__step">
+              <span class="path__dot" aria-hidden="true"></span>
+              <h3 class="path__title"><span class="path__n" aria-hidden="true">3</span> Wybór formy współpracy</h3>
+              <p>Razem wybieramy formę współpracy, która pasuje do tego, czego teraz potrzebujesz. Płatność następuje dopiero po pozytywnej decyzji o dopasowaniu.</p>
+            </li>
+            <li class="path__step">
+              <span class="path__dot" aria-hidden="true"></span>
+              <h3 class="path__title"><span class="path__n" aria-hidden="true">4</span> Praca nad działaniami</h3>
+              <p>Spotykamy się indywidualnie, ustalamy konkretne kroki i wracamy do nich, żeby zobaczyć, co udało się zrobić. Tempo dopasowujemy do Ciebie, nie odwrotnie.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="formy" class="forms" data-tone="night" aria-labelledby="tytul-formy" data-where-label="Formy współpracy">
+      <div class="wrap">
+        <div class="forms__head">
+          <h2 id="tytul-formy" class="h2">Formy współpracy</h2>
+          <p class="forms__lead">Każdy potrzebuje czegoś innego. Jedni chcą jednego spotkania i gotowego planu. Inni wolą regularnie sprawdzać, co się udało i co dalej. Formę wybieramy razem, dopiero po pierwszej rozmowie.</p>
+        </div>
+        <ul class="forms__list" role="list">
+          <li class="form" data-time>
+            <div class="form__what">
+              <h3 class="form__name">Konsultacja działania</h3>
+              <p class="form__who">Gdy wystarczy Ci jedno spotkanie i plan na najbliższy czas.</p>
+              <p class="form__desc">Jedno spotkanie indywidualne. Porządkujemy sytuację, ustalamy, co jest najważniejsze i co robisz w najbliższym czasie.</p>
+            </div>
+            <div class="form__time">
+              <span class="time time--one" aria-hidden="true"><i class="is-meet"></i></span>
+              <p class="form__dur">90 minut, jedno spotkanie</p>
+            </div>
+            <div class="form__price">
+              <p class="form__next"><a href="kontakt.html">Umów pierwszą rozmowę</a></p>
+            </div>
+          </li>
+          <li class="form" data-time>
+            <div class="form__what">
+              <h3 class="form__name">14 Dni Działania</h3>
+              <p class="form__who">Gdy chcesz mieć plan i kogoś, z kim sprawdzisz, jak Ci idzie.</p>
+              <p class="form__desc">Program indywidualny. Ustalamy plan działań, a potem wracamy do niego i patrzymy, co się udało.</p>
+            </div>
+            <div class="form__time">
+              <span class="time time--days" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+              <p class="form__dur">Program w ciągu 14 dni, łącznie 100 minut pracy bezpośredniej</p>
+            </div>
+            <div class="form__price">
+              <p class="form__next"><a href="kontakt.html">Umów pierwszą rozmowę</a></p>
+            </div>
+          </li>
+          <li class="form" data-time>
+            <div class="form__what">
+              <h3 class="form__name">Sesje 2x2</h3>
+              <p class="form__who">Gdy chcesz regularnie porządkować sytuację.</p>
+              <p class="form__desc">Dwa spotkania w miesiącu. Omawiamy, co udało się zrobić, i ustalamy kolejne kroki.</p>
+              <p class="form__todo"><span class="todo">[Czas trwania spotkania oraz zasady odnowienia, rezygnacji i pauzy - DO UZUPEŁNIENIA]</span></p>
+            </div>
+            <div class="form__time">
+              <span class="time time--month" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="is-meet"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="is-meet"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+              <p class="form__dur">2 spotkania w miesiącu. Abonament miesięczny, płatność cykliczna</p>
+            </div>
+            <div class="form__price">
+              <p class="form__next"><a href="kontakt.html">Umów pierwszą rozmowę</a></p>
+            </div>
+          </li>
+        </ul>
+        <p class="forms__note">Cenę i zasady płatności przekazuję po pierwszej rozmowie, przed rozpoczęciem współpracy. Współpraca indywidualna jest możliwa po pozytywnej pierwszej rozmowie. Nie obejmuje porady prawnej, terapii ani mediacji: zobacz <a href="zakres.html">zakres pomocy</a>.</p>
+      </div>
+    </section>
+
+    <section id="o-mnie" class="who" aria-labelledby="tytul-kto" data-where-label="O mnie">
+      <div class="wrap who__grid">
+        <div class="who__id">
+          <h2 id="tytul-kto" class="h2">O mnie</h2>
+          <p class="who__name">Łukasz Kostrzewa</p>
+          <p class="who__practice">Pracę prowadzę w ramach jednoosobowej praktyki.</p>
+        </div>
+        <div class="who__facts">
+          <h3 class="who__h3">Doświadczenie</h3>
+          <ul class="who__list" role="list">
+            <li>trener biznesu, certyfikat SET <span class="nowrap">(122 godz., 2019)</span>,</li>
+            <li>ok. 13 lat pracy jako pedagog szkolny <span class="nowrap">(2010-2023)</span>,</li>
+            <li>praca z rodzicami i konfliktem w kontekście szkolnym,</li>
+            <li>warsztaty profilaktyczne: przemoc rówieśnicza, cyberprzemoc, higiena cyfrowa, samoregulacja.</li>
+          </ul>
+          <p class="who__limit">To doświadczenie szkoleniowe i warsztatowe. Nie mam kwalifikacji prawnika, psychologa ani psychoterapeuty i nie udzielam porad z tych dziedzin.</p>
+          <p class="who__more"><a href="o-mnie.html">Więcej o mnie</a><a href="zakres.html">Zakres pomocy i jej granice</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pytania" class="faq" aria-labelledby="tytul-faq" data-where-label="Pytania">
+      <div class="wrap faq__grid">
+        <h2 id="tytul-faq" class="h2 faq__title">Najczęstsze pytania</h2>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>Czy to jest porada prawna?</summary>
+            <div class="faq__answer"><p>Nie. Nie udzielam porad prawnych, nie interpretuję przepisów i nie przewiduję, jak skończy się Twoja sprawa. Mogę za to pomóc Ci przygotować pytania do prawnika.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Czy to terapia albo mediacja?</summary>
+            <div class="faq__answer"><p>Nie. Nie diagnozuję, nie prowadzę terapii ani mediacji. Jeśli taka pomoc jest Ci potrzebna, pomogę Ci przygotować pytania do odpowiedniego specjalisty.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Czy mogę liczyć na konkretny efekt?</summary>
+            <div class="faq__answer"><p>Zobowiązuję się do starannego działania, nie do rezultatu. Nie obiecuję wyniku sprawy, pojednania ani spokoju w określonym czasie. Pracujemy nad tym, co Ty możesz zrobić, i sprawdzamy, jak Ci to idzie.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Czy każdy może skorzystać z tej pomocy?</summary>
+            <div class="faq__answer"><p>Nie każdy. To pomoc dla dorosłych, którzy są w prawdziwej separacji lub rozwodzie, chcą pracować nad własnym działaniem i potrafią spokojnie uczestniczyć w rozmowie. O dopasowaniu decyduje człowiek po pierwszej rozmowie. Jeśli moja pomoc nie będzie dla Ciebie właściwa, wskażę, gdzie szukać innej.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Czym jest pierwsza rozmowa?</summary>
+            <div class="faq__answer"><p>To 15 minut na początek. Sprawdzamy, czy zakres mojej pomocy pasuje do Twojej sytuacji. Nie omawiamy w niej Twojej sprawy i nie udzielam porad.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Czy rozmowy są poufne?</summary>
+            <div class="faq__answer"><p>Poufność ma granice, które wynikają z prawa i bezpieczeństwa; zostaną opisane w warunkach współpracy. Nie gwarantuję poufności zawodowej, jaka dotyczy np. prawnika czy psychologa. Sesje domyślnie nie są nagrywane.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Czy mogę pisać poza spotkaniami, także w kryzysie?</summary>
+            <div class="faq__answer"><p>Poza umówionymi spotkaniami współpraca nie obejmuje dostępności 24/7 ani monitorowania wiadomości w trybie kryzysowym. W zagrożeniu życia lub zdrowia zadzwoń pod 112.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+    <section class="closing" aria-labelledby="tytul-zamkniecie" data-where-label="Pierwszy krok">
+      <div class="closing__sky" aria-hidden="true"><span class="closing__sun"></span><span class="closing__line"></span></div>
+      <div class="wrap closing__inner">
+        <h2 id="tytul-zamkniecie" class="closing__title">Zacznij od jednego kroku</h2>
+        <p class="closing__lead">Wystarczy 15 minut rozmowy. Sprawdzimy w niej, czy i jak mogę Ci pomóc. Szczegółów swojej sprawy opisywać nie musisz.</p>
+        <p class="closing__action"><a class="button button--ink magnetic" href="kontakt.html">Umów pierwszą rozmowę</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" data-tone="night">
+    <div class="wrap footer__grid">
+      <p><strong>Dane przedsiębiorcy:</strong> Łukasz Kostrzewa, ul. Rynek 21A, 08-445 Osieck, NIP 5321815694, REGON 140424310</p>
+      <p>Moja praca nie zastępuje pomocy prawnej, psychologicznej, mediacji ani interwencji kryzysowej.</p>
+      <p><strong>Dokumenty:</strong> <a href="regulamin.html">Regulamin</a>, <a href="polityka-prywatnosci.html">Polityka prywatności i cookies</a>, <a href="regulamin.html#odstapienie">odstąpienie od umowy</a></p>
+      <p>Ta strona nie używa plików cookie ani skryptów śledzących.</p>
+    </div>
+  </footer>
+</body>
+</html>
